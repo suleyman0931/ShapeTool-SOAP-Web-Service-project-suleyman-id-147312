@@ -104,7 +104,7 @@ http://www.shapetool.com/gen
 WSDL URL:
 
 
-http://localhost:8080/ws/calculator.wsdl
+http://localhost:8080/ws/shapes.wsdl
 
 
 SOAP Endpoint:
@@ -162,7 +162,7 @@ samples/requests.xml
 1. Start the Spring Boot application
 2. Open the WSDL in a browser:
 
-http://localhost:8080/ws/calculator.wsdl
+http://localhost:8080/ws/shapes.wsdl
 
 3. Import into SoapUI
 4. Send SOAP requests
