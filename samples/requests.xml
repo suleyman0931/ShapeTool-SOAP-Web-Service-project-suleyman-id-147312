@@ -1,0 +1,134 @@
+<!-- Circle Area Request -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gen="http://www.shapetool.com/gen">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <gen:circleAreaRequest>
+         <gen:radius>5.0</gen:radius>
+      </gen:circleAreaRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+        <!-- Circle Area Response -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gen="http://www.shapetool.com/gen">
+<soapenv:Header/>
+<soapenv:Body>
+   <gen:circleAreaResponse>
+      <gen:area>78.53981633974483</gen:area>
+   </gen:circleAreaResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+        <!-- Square Area Request -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gen="http://www.shapetool.com/gen">
+<soapenv:Header/>
+<soapenv:Body>
+   <gen:squareAreaRequest>
+      <gen:side>4.0</gen:side>
+   </gen:squareAreaRequest>
+</soapenv:Body>
+</soapenv:Envelope>
+
+        <!-- Square Area Response -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gen="http://www.shapetool.com/gen">
+<soapenv:Header/>
+<soapenv:Body>
+   <gen:squareAreaResponse>
+      <gen:area>16.0</gen:area>
+   </gen:squareAreaResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+        <!-- Rectangle Area Request -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gen="http://www.shapetool.com/gen">
+<soapenv:Header/>
+<soapenv:Body>
+   <gen:rectangleAreaRequest>
+      <gen:length>10.0</gen:length>
+      <gen:width>5.0</gen:width>
+   </gen:rectangleAreaRequest>
+</soapenv:Body>
+</soapenv:Envelope>
+
+        <!-- Rectangle Area Response -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gen="http://www.shapetool.com/gen">
+<soapenv:Header/>
+<soapenv:Body>
+   <gen:rectangleAreaResponse>
+      <gen:area>50.0</gen:area>
+   </gen:rectangleAreaResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+        <!-- Parallelogram Area Request -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gen="http://www.shapetool.com/gen">
+<soapenv:Header/>
+<soapenv:Body>
+   <gen:parallelogramAreaRequest>
+      <gen:base>8.0</gen:base>
+      <gen:height>6.0</gen:height>
+   </gen:parallelogramAreaRequest>
+</soapenv:Body>
+</soapenv:Envelope>
+
+        <!-- Parallelogram Area Response -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gen="http://www.shapetool.com/gen">
+<soapenv:Header/>
+<soapenv:Body>
+   <gen:parallelogramAreaResponse>
+      <gen:area>48.0</gen:area>
+   </gen:parallelogramAreaResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+        <!-- Triangle Area Request -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gen="http://www.shapetool.com/gen">
+<soapenv:Header/>
+<soapenv:Body>
+   <gen:triangleAreaRequest>
+      <gen:base>12.0</gen:base>
+      <gen:height>5.0</gen:height>
+   </gen:triangleAreaRequest>
+</soapenv:Body>
+</soapenv:Envelope>
+
+        <!-- Triangle Area Response -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gen="http://www.shapetool.com/gen">
+<soapenv:Header/>
+<soapenv:Body>
+   <gen:triangleAreaResponse>
+      <gen:area>30.0</gen:area>
+   </gen:triangleAreaResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+
+        <!-- Invalid Request (Negative Value) -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gen="http://www.shapetool.com/gen">
+<soapenv:Header/>
+<soapenv:Body>
+   <gen:circleAreaRequest>
+      <gen:radius>-5.0</gen:radius>
+   </gen:circleAreaRequest>
+</soapenv:Body>
+</soapenv:Envelope>
+
+        <!-- Example SOAP Fault Response for Invalid Request -->
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Header/>
+<soapenv:Body>
+   <soapenv:Fault>
+      <faultcode>soapenv:Client</faultcode>
+      <faultstring>Validation failed: cvc-minInclusive-valid: Value '-5.0' is not facet-valid with respect to minInclusive '0.0'.</faultstring>
+   </soapenv:Fault>
+</soapenv:Body>
+</soapenv:Envelope>
