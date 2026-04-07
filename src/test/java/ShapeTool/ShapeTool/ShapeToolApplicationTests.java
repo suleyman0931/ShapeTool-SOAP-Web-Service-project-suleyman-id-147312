@@ -20,8 +20,8 @@ class ShapeToolApplicationTests {
 
     @Test
     void wsdlBeanIsPresent() {
-        assertThat(context.containsBean("calculator")).isTrue();
-        Object wsdlBean = context.getBean("calculator");
+        assertThat(context.containsBean("shapes")).isTrue();
+        Object wsdlBean = context.getBean("shapes");
         assertThat(wsdlBean).isInstanceOf(Wsdl11Definition.class);
     }
 
