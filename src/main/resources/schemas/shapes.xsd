@@ -95,7 +95,7 @@
     <!-- Common Type for Positive Double -->
     <xs:simpleType name="positiveDouble">
         <xs:restriction base="xs:double">
-            <xs:minInclusive value="0.0"/>
+            <xs:minExclusive value="0.0"/>
         </xs:restriction>
     </xs:simpleType>
 
